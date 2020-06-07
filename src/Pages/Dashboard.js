@@ -1,15 +1,13 @@
 import React from "react";
 
-import LeftSideBar from "../Component/Dashboard/LeftSideBar";
-import RightSideBar from "../Component/Dashboard/RightSideBar";
+import MainAdmin from "../Component/Home/Admin/MainAdmin";
 
 
 export default function Dashboard(){
 
   return (
     <React.Fragment>
-      <LeftSideBar />
-      <RightSideBar />
+      <MainAdmin />
     </React.Fragment>
   )
 }
