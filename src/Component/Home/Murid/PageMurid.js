@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function RightSideBar() {
+export default function PageMurid(){
 
   return (
     <div class="all-content-wrapper">
@@ -153,7 +153,6 @@ export default function RightSideBar() {
                     </div>
                 </div>
             </div>
-
             {/*
               <!-- Mobile Menu start -->
             */}
@@ -171,7 +170,7 @@ export default function RightSideBar() {
                                             <ul class="collapse dropdown-header-top">
                                                 <li><a href="index.html">Dashboardv Admin</a></li>
                                                 <li><a href="index-1.html">Dashboard Guru</a></li>
-                                                <li><a href="index-3.html">Dasboard Murid</a></li>
+                                                <li><a href="index-2.html">Dasboard Murid</a></li>
                                             </ul>
                                         </li>
                                         <li>
@@ -179,11 +178,32 @@ export default function RightSideBar() {
                                                 <span class="admin-project-icon nalika-icon nalika-down-arrow"></span>
                                             </a>
                                             <ul id="demo" class="collapse dropdown-header-top">
-                                                <li><a href="mailbox.html">Materi</a>
+                                                <li>
+                                                    <a href="list_materi.html">Materi Admin</a>
                                                 </li>
-                                                <li><a href="mailbox-view.html">Try Out</a>
+                                                <li>
+                                                    <a href="materi_guru.html">Materi Guru</a>
                                                 </li>
-                                                <li><a href="mailbox-compose.html">Tes Ujian</a>
+                                                <li>
+                                                    <a href="materi_murid.html">Materi murid</a>
+                                                </li>
+                                                <li>
+                                                    <a href="try_out_admin.html">Try Out admin</a>
+                                                </li>
+                                                <li>
+                                                    <a href="try_out_guru.html">Try Out guru</a>
+                                                </li>
+                                                <li>
+                                                    <a href="try_out_murid.html">Try Out murid</a>
+                                                </li>
+                                                <li>
+                                                    <a href="list_soal_pembahasan.html">Pembahasan admin</a>
+                                                </li>
+                                                <li>
+                                                    <a href="pembahasan_guru.html">Pembahasan guru</a>
+                                                </li>
+                                                <li>
+                                                    <a href="pembahasan_murid.html">Pembahasan murid</a>
                                                 </li>
                                             </ul>
                                         </li>
@@ -192,10 +212,24 @@ export default function RightSideBar() {
                                                 <span class="admin-project-icon nalika-icon nalika-down-arrow"></span>
                                             </a>
                                             <ul id="others" class="collapse dropdown-header-top">
-                                                <li><a href="file-manager.html">TipsLulus CPNS</a></li>
-                                                <li><a href="contacts.html">Kisi-kisi</a></li>
-                                                <li><a href="projects.html">Komplai/Saran</a></li>
-                                                <li><a href="project-details.html">Peringkat Nasional</a></li>
+                                                <li>
+                                                    <a href="tips_cpns_admin.html">TipsLulus CPNS Admin</a>
+                                                </li>
+                                                <li>
+                                                    <a href="tips_cpns_murid.html">TipsLulus CPNS Murid</a>
+                                                </li>
+                                                <li>
+                                                    <a href="kisi_admin.html">Kisi-kisi Admin</a>
+                                                </li>
+                                                <li>
+                                                    <a href="kisi_murid.html">Kisi-kisi Murid</a>
+                                                </li>
+                                                <li>
+                                                    <a href="komplain_admin.html">Komplai/Saran Admin</a>
+                                                </li>
+                                                <li>
+                                                    <a href="komplain_murid.html">Komplai/Saran Murid</a>
+                                                </li>
                                             </ul>
                                         </li>
                                         <li>
@@ -229,14 +263,14 @@ export default function RightSideBar() {
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                             <div class="breadcome-list">
                                 <div class="row">
-                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" style={{"text-align":"center"}}>
                                         <div class="breadcomb-wp">
                                             <div class="breadcomb-icon">
-                                                <i class="icon nalika-home"></i>
+                                                <i class="icon nalika-analytics"></i>
                                             </div>
                                             <div class="breadcomb-ctn">
-                                                <h2>Selamat Datang Admin</h2>
-                                                <p>Welcome to Nalika <span class="bread-ntd">Admin Template</span></p>
+                                                <h2>Selamat Datang Murid</h2>
+                                                <p>Welcome to <span class="bread-ntd">Dashboard</span></p>
                                             </div>
                                         </div>
                                     </div>
@@ -257,52 +291,10 @@ export default function RightSideBar() {
             <div class="row admin text-center">
                 <div class="col-md-12">
                     <div class="row">
-                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                            <div class="admin-content analysis-progrebar-ctn res-mg-t-15">
-                                <h4 class="text-left text-uppercase">
-                                    <a href="list_murid.html">
-                                        <b>List Murid</b>
-                                    </a>
-                                </h4>
-                                <div class="row vertical-center-box vertical-center-box-tablet">
-                                    <div class="col-xs-3 mar-bot-15 text-left">
-                                        <label class="label bg-green">Total Murid <i class="fa fa-level-up"
-                                                aria-hidden="true"></i></label>
-                                    </div>
-                                    <div class="col-xs-9 cus-gh-hd-pro">
-                                        <h2 class="text-right no-margin">10,000</h2>
-                                    </div>
-                                </div>
-                                <div class="progress progress-mini">
-                                    <div style={{"width":"78%"}} class="progress-bar bg-green"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" style={{"margin-bottom":"1px"}}>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                             <div class="admin-content analysis-progrebar-ctn res-mg-t-30">
                                 <h4 class="text-left text-uppercase">
-                                    <a href="list_guru.html">
-                                        <b>List Guru</b>
-                                    </a>
-                                </h4>
-                                <div class="row vertical-center-box vertical-center-box-tablet">
-                                    <div class="text-left col-xs-3 mar-bot-15">
-                                        <label class="label bg-red">Total Guru <i class="fa fa-level-down"
-                                                aria-hidden="true"></i></label>
-                                    </div>
-                                    <div class="col-xs-9 cus-gh-hd-pro">
-                                        <h2 class="text-right no-margin">5,000</h2>
-                                    </div>
-                                </div>
-                                <div class="progress progress-mini">
-                                    <div style={{"width":"38%"}} class="progress-bar progress-bar-danger bg-red"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                            <div class="admin-content analysis-progrebar-ctn res-mg-t-30">
-                                <h4 class="text-left text-uppercase">
-                                    <a href="list_materi.html">
+                                    <a href="materi_murid.html">
                                         <b>List Materi</b>
                                     </a>
                                 </h4>
@@ -320,10 +312,10 @@ export default function RightSideBar() {
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                             <div class="admin-content analysis-progrebar-ctn res-mg-t-30">
                                 <h4 class="text-left text-uppercase">
-                                    <a href="list_soal.html">
+                                    <a href="pembahasan_murid.html">
                                         <b>List Soal & Pembahasan</b>
                                     </a>
                                 </h4>
@@ -345,103 +337,79 @@ export default function RightSideBar() {
                 </div>
             </div>
         </div>
+        {/*
+          <!-- list aktifasi -->
+          */}
         <div class="product-status mg-b-30" style={{"margin-top":"30px"}}>
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div class="product-status-wrap">
-                            <h4>Aktivasi akun</h4>
+                            <h4>Ranking Ujian</h4>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs" style={{"margin-bottom":"20px","color":"#ffffff"}}>
+                                <label for="" style={{" margin-bottom":"20px"}}>Pilih tanggal</label>
+                                <select name="select" class="form-control">
+                                    <option value="1">--pilih--</option>
+                                    <option value="2">11 april 2020</option>
+                                    <option value="3">12 april 2020</option>
+                                    <option value="4">13 april 2020</option>
+                                    <option value="5">14 april 2020</option>
+                                    <option value="6">15 april 2020</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs" style={{"margin-bottom":"20px;","color":"#ffffff"}}>
+                                <label for="" style={{"margin-bottom":"20px"}}>Pilih Pelajaran</label>
+                                <select name="select" class="form-control">
+                                    <option value="1">--pilih--</option>
+                                    <option value="2">Try Out 1</option>
+                                    <option value="3">Try Out 2</option>
+                                    <option value="4">Try Out 3</option>
+                                    <option value="5">Try Out 4</option>
+                                    <option value="6">Try Out 5</option>
+                                </select>
+                            </div>
                             <table>
                                 <tr>
                                     <th>No.</th>
-                                    <th>Bukti Transaksi</th>
                                     <th>Name</th>
-                                    <th>Email</th>
+                                    <th>Pelajaran</th>
                                     <th>Tanggal</th>
-                                    <th>Paket yang diambil</th>
-                                    <th>Harga Paket</th>
-                                    <th>Status akun</th>
-                                    <th style={{"text-align":"center"}}>Aktivasi</th>
+                                    <th>Total Nilai</th>
                                 </tr>
                                 <tr>
                                     <td>1</td>
-                                    <td><img src="img/new-product/5-small.jpg" alt="" /></td>
                                     <td>Handrawan</td>
-                                    <td>handrawan@gmail.com</td>
+                                    <td>Try Out 1</td>
                                     <td>11 April 2020</td>
-                                    <td>CPNS Online</td>
-                                    <td>Rp.100.000</td>
-                                    <td>
-                                        <button class="pd-setting">Active</button>
-                                    </td>
-                                    <td>
-                                        <button class="pd-setting">Active</button>
-                                        <button class="ds-setting">Disabled</button>
-                                    </td>
+                                    <td>290</td>
                                 </tr>
                                 <tr>
                                     <td>2</td>
-                                    <td><img src="img/new-product/5-small.jpg" alt="" /></td>
-                                    <td>Hengky</td>
-                                    <td>hengky@gmail.com</td>
+                                    <td>imem</td>
+                                    <td>Try Out 1</td>
                                     <td>11 April 2020</td>
-                                    <td>CPNS Offline</td>
-                                    <td>Rp.100.000</td>
-                                    <td>
-                                        <button class="ds-setting">Disabled</button>
-                                    </td>
-                                    <td>
-                                        <button class="pd-setting">Active</button>
-                                        <button class="ds-setting">Disabled</button>
-                                    </td>
+                                    <td>287</td>
                                 </tr>
                                 <tr>
                                     <td>3</td>
-                                    <td><img src="img/new-product/5-small.jpg" alt="" /></td>
-                                    <td>Ana</td>
-                                    <td>ana@gmail.com</td>
+                                    <td>imam</td>
+                                    <td>Try Out 1</td>
                                     <td>11 April 2020</td>
-                                    <td>CPNS Online + offline</td>
-                                    <td>Rp.100.000</td>
-                                    <td>
-                                        <button class="ps-setting">Paused</button>
-                                    </td>
-                                    <td>
-                                        <button class="pd-setting">Active</button>
-                                        <button class="ds-setting">Disabled</button>
-                                    </td>
+                                    <td>286</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>ana</td>
+                                    <td>Try Out 1</td>
+                                    <td>11 April 2020</td>
+                                    <td>285</td>
                                 </tr>
                                 <tr>
                                     <td>5</td>
-                                    <td><img src="img/new-product/5-small.jpg" alt="" /></td>
-                                    <td>Adi</td>
-                                    <td>adi@gmail.com</td>
-                                    <td>12 April 2020</td>
-                                    <td>CPNS Online + offline</td>
-                                    <td>Rp.100.000</td>
-                                    <td>
-                                        <button class="ps-setting">Paused</button>
-                                    </td>
-                                    <td>
-                                        <button class="pd-setting">Active</button>
-                                        <button class="ds-setting">Disabled</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>5</td>
-                                    <td><img src="img/new-product/5-small.jpg" alt="" /></td>
-                                    <td>Ali</td>
-                                    <td>ali@gmail.com</td>
-                                    <td>13 April 2020</td>
-                                    <td>CPNS Online + offline</td>
-                                    <td>Rp.100.000</td>
-                                    <td>
-                                        <button class="ps-setting">Paused</button>
-                                    </td>
-                                    <td>
-                                        <button class="pd-setting">Active</button>
-                                        <button class="ds-setting">Disabled</button>
-                                    </td>
+                                    <td>hengky</td>
+                                    <td>Try Out 1</td>
+                                    <td>11 April 2020</td>
+                                    <td>280</td>
                                 </tr>
                             </table>
                             <div class="custom-pagination">
@@ -482,5 +450,6 @@ export default function RightSideBar() {
             </div>
         </div>
     </div>
+
   );
 }

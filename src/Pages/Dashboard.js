@@ -1,13 +1,20 @@
 import React from "react";
 
-import MainAdmin from "../Component/Home/Admin/MainAdmin";
+import {Switch,Route,useRouteMatch} from "react-router-dom";
 
+//Home Component
+import MainHome from "../Component/Home/Main";
+//Home Component
 
 export default function Dashboard(){
 
+  let {path}=useRouteMatch();
+
   return (
-    <React.Fragment>
-      <MainAdmin />
-    </React.Fragment>
-  )
+    <>
+      <Switch>
+        <MainHome />
+      </Switch>
+    </>
+  );
 }

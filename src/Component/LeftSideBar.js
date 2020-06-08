@@ -1,17 +1,21 @@
 import React from "react";
 
+import {Link,useRouteMatch} from "react-router-dom";
+
 export default function LeftSideBar(){
+
+  let {url}=useRouteMatch();
 
   return (
     <div class="left-sidebar-pro">
-        <nav id="sidebar" class="">
+        <nav id="sidebar">
             <div class="sidebar-header">
-                <a href={"#"}><img class="main-logo" src="img/logo/logo.png" alt="" /></a>
-                <strong><img src="img/logo/logosn.png" alt="" /></strong>
+                <a href={"#"}><img class="main-logo" src="/assets/img/logo/logo.png" alt="" /></a>
+                <strong><img src="/assets/img/logo/logosn.png" alt="" /></strong>
             </div>
             <div class="profile">
                 <div class="profile-dtl">
-                    <a href="#"><img src="img/notification/p1.jpg" class="img-fluid" alt="" /></a>
+                    <a href="#"><img src="/assets/img/notification/p1.jpg" class="img-fluid" alt="" /></a>
                     <h2>Name <span class="min-dtn">Admin</span></h2>
                 </div>
                 <div class="profile-social-dtl">
@@ -34,21 +38,21 @@ export default function LeftSideBar(){
                             <ul class="submenu-angle" aria-expanded="true">
 
                                 <li>
-                                    <a title="Dashboard v.1" href="index.html">
+                                    <Link title="Dashboard v.1" to={`${url}`}>
                                         <span class="mini-sub-pro">Dashboard Admin</span>
-                                    </a>
+                                    </Link>
                                 </li>
 
                                 <li>
-                                    <a title="Dashboard v.2" href="index-1.html">
+                                  <Link title="Dashboard v.2" to={`${url}/Guru`}>
                                         <span class="mini-sub-pro">Dashboard Guru</span>
-                                    </a>
+                                  </Link>
                                 </li>
 
                                 <li>
-                                    <a title="Dashboard v.3" href="index-2.html">
-                                        <span class="mini-sub-pro">Dasboard Murid</span>
-                                    </a>
+                                  <Link title="Dashboard v.3" to={`${url}/Murid`}>
+                                      <span class="mini-sub-pro">Dasboard Murid</span>
+                                  </Link>
                                 </li>
                             </ul>
                         </li>
