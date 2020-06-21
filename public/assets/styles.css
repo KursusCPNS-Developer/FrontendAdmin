@@ -436,8 +436,9 @@ select {
 
 @media screen and (max-width: 992px) {
   .container {
-    width: calc(100% - 40px);
-    max-width: 100%; }
+    width: 100%;
+    max-width: 100%;
+  }
 
   .signup-content {
     flex-direction: column;
@@ -482,6 +483,6 @@ select {
 
   #reset {
     margin-right: 0px;
-    margin-bottom: 10px; } }
+    margin-bottom: 0px; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -19,7 +19,7 @@ function App() {
     if(localStorage.getItem("kursus")){
       Auth.onLogin(()=>{
         if(window.location.pathname==="/"){
-          history.push("/Dashboard");
+          history.push("/dashboard");
         }else{
           history.push(window.location.pathname);
         }
