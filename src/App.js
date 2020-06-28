@@ -3,6 +3,7 @@ import React from 'react';
 import {Switch,Route,useHistory,useRouteMatch,withRouter} from "react-router-dom";
 
 import Login from "./Pages/Login";
+import Register from "./Pages/Register";
 
 import LeftSideBar from "./Component/LeftSideBar";
 import Dashboard from "./Pages/Dashboard";
@@ -34,11 +35,11 @@ function App() {
   return (
     <Switch>
 
-      <Route path="/login">
+      <Route path="/login" exact>
         <Login />
       </Route>
       <Route path="/register">
-        <h1>Wawan</h1>
+        <Register />
       </Route>
 
         <ProteksiRoute path="/Dashboard">

@@ -1,5 +1,7 @@
 import React from "react";
 
+import {Link} from "react-router-dom";
+
 export default function Login(){
   return (
             <div class="container-fluid" style={{padding:"0"}}>
@@ -19,7 +21,7 @@ export default function Login(){
                               </div>
 
                               <div class="col-sm-6 col-md-10">
-                                <input class="form-control" type="email" name="email" id="email" required />
+                                <input class="border-primary form-control" type="email" placeholder=".. ." required />
                               </div>
 
                             </div>
@@ -28,7 +30,7 @@ export default function Login(){
                                 <label for="password" style={{"color":"white"}}><h5>Password</h5></label>
                               </div>
                               <div class="col-sm-6 col-md-10">
-                                <input class="form-control" type="password" name="password" id="password" required />
+                                <input class="border-primary form-control" type="password" placeholder=".. ." required />
                               </div>
                             </div>
 
@@ -40,8 +42,10 @@ export default function Login(){
                                 <input type="submit" value="Reset" style={{"width":"100%"}} class="btn btn-danger" name="reset" id="reset" />
                               </div>
                             </div>
-
                         </form>
+                        <div style={{"margin-top":"25px"}} align="center">
+                          <Link className="btn" style={{"color":"white","font-weight":"bold"}} to="/register">Don't have an account ? Register here</Link>
+                        </div>
                     </div>
                 </div>
 
