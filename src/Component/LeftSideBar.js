@@ -8,7 +8,7 @@ export default function LeftSideBar(){
 
   return (
     <div class="left-sidebar-pro">
-        <nav id="sidebar">
+        <nav id="sidebar" style={{"max-height":"100vh","overflow":"auto"}}>
             <div class="sidebar-header">
                 <a href={"#"}><img class="main-logo" src="/assets/img/logo/logo.png" alt="" /></a>
                 <strong><img src="/assets/img/logo/logosn.png" alt="" /></strong>

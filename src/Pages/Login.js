@@ -1,8 +1,51 @@
 import React from "react";
 
-import {Link} from "react-router-dom";
+import axios from "axios";
+import {urlContext} from "../context";
+
+import {Link,useHistory} from "react-router-dom";
+import Swal from "sweetalert2";
 
 export default function Login(){
+  let baseUrl=React.useContext(urlContext);
+  let history=useHistory();
+  let [LoginState,setLogin]=React.useState({
+    email:"",
+    password:""
+  });
+
+  let handleChange=(e)=>{
+    setLogin({...LoginState,[e.target.name]:e.target.value});
+  };
+
+  let SubmitRequest=React.useCallback((e)=>{
+    e.preventDefault();
+    axios({
+      url:`${baseUrl}/login`,
+      method:'POST',
+      data:{
+        email:LoginState.email,
+        password:LoginState.password
+      }
+    }).then(({data})=>{
+      localStorage.setItem("kursus",data.token);
+      history.push("/dashboard");
+    }).catch(err=>{
+      let msg="";
+      if(err.response===undefined){
+        msg=err.message;
+      }else{
+        msg=err.response.data.message;
+      }
+      Swal.fire({
+        icon:"error",
+        title:"Login Error",
+        text:msg,
+        timer:0,
+      });
+    });
+  },[baseUrl,history,LoginState]);
+
   return (
             <div class="container-fluid" style={{padding:"0"}}>
               <div class="row">
@@ -12,7 +55,7 @@ export default function Login(){
                 </div>
 
                 <div class="col-sm-6 col-md-6">
-                        <form method="POST" style={{"color":"white","margin-top":"20%"}}>
+                        <form style={{"color":"white","margin-top":"20%"}} onSubmit={SubmitRequest}>
 
                             <h2 style={{"color":"white"}} align="center">Student Login form</h2>
                             <div class="form-group row" style={{"color":"white","margin-top":"10%"}}>
@@ -21,7 +64,7 @@ export default function Login(){
                               </div>
 
                               <div class="col-sm-6 col-md-10">
-                                <input class="border-primary form-control" type="email" placeholder=".. ." required />
+                                <input class="border-primary form-control" name="email" type="email" placeholder=".. ." onChange={handleChange} required />
                               </div>
 
                             </div>
@@ -30,7 +73,7 @@ export default function Login(){
                                 <label for="password" style={{"color":"white"}}><h5>Password</h5></label>
                               </div>
                               <div class="col-sm-6 col-md-10">
-                                <input class="border-primary form-control" type="password" placeholder=".. ." required />
+                                <input class="border-primary form-control" name="password" type="password" placeholder=".. ." onChange={handleChange} required />
                               </div>
                             </div>
 
