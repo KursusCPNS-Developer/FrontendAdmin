@@ -70,7 +70,11 @@ export default function Register(){
                 </div>
                 <div class="signup-form">
                     <form class="register-form" id="register-form" onSubmit={handleSubmit}>
-                        <h2>student registration form</h2>
+                        <h2>
+                        <Link to="/" style={{"text-decoration":"none"}}>
+                          Student registration form
+                        </Link>
+                        </h2>
                         <div class="form-group">
                             <label for="fullname">Full Name :</label>
                             <input type="text" name="fullname" id="fullname" onChange={handleChange} required />

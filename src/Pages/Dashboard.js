@@ -1,36 +1,23 @@
-import React from "react";
+import React from 'react';
 
-import {Switch,Route,useRouteMatch} from "react-router-dom";
+import MainMenu from "../components/Menu/MainMenu";
+import MainJumbotron from "../components/Jumbotron/MainJumbotron";
+import MainAbout from "../components/About/MainAbout";
+import MainBlog from "../components/Blog/MainBlog";
+import MainGuru from "../components/Guru/MainGuru";
+import MainPaket from "../components/Paket/MainPaket";
 
-//Home Component
-import MainAdmin from "../Component/Home/Main";
-import AdminPage from "../Component/Home/Admin/AdminPage";
-import GuruPage from "../Component/Home/Guru/GuruPage";
-import MuridPage from "../Component/Home/Murid/MuridPage";
 
-//Home Component
-
-export default function Dashboard(){
-
-  let {path}=useRouteMatch();
-
-  React.useEffect(()=>{
-
-  },[]);
-
+function App() {
   return (
     <>
-    <Switch>
-      <Route path={`${path}/`} exact>
-        <AdminPage />
-      </Route>
-      <Route path={`${path}/Guru`}>
-        <GuruPage />
-      </Route>
-      <Route path={`${path}/Murid`}>
-        <MuridPage />
-      </Route>
-    </Switch>
+      <MainMenu />
+      <MainJumbotron />
+      <MainAbout />
+      <MainBlog />
+      <MainPaket />
     </>
   );
 }
+
+export default App;

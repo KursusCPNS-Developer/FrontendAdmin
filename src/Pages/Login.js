@@ -51,13 +51,15 @@ export default function Login(){
               <div class="row">
 
                 <div class="col-sm-6 col-md-6">
-                    <img src="./assets/images/signup-img.jpg" style={{"width":"95vw","height":"95vh"}} alt="foto" />
+                  <img src="./assets/images/signup-img.jpg" style={{"width":"95vw","height":"95vh"}} alt="foto" />
                 </div>
 
                 <div class="col-sm-6 col-md-6">
                         <form style={{"color":"white","margin-top":"20%"}} onSubmit={SubmitRequest}>
 
-                            <h2 style={{"color":"white"}} align="center">Student Login form</h2>
+                            <h2 style={{"color":"white"}} align="center">
+                              <Link className="btn" style={{"color":"white","font-weight":"bold"}} to="/">Student Login form</Link>
+                            </h2>
                             <div class="form-group row" style={{"color":"white","margin-top":"10%"}}>
                               <div class="col-sm-6 col-md-2">
                                 <label for="email" style={{"color":"white"}}><h5>Email</h5></label>
